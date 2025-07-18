@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36310.24 d17.14
+VisualStudioVersion = 17.14.36310.24
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VersInfoExPlus", "src\VersInfoExPlus.vcxproj", "{FB127A54-83D0-4AA1-BF6E-42228160FCB3}"
 EndProject
@@ -16,8 +16,8 @@ Global
 		{FB127A54-83D0-4AA1-BF6E-42228160FCB3}.UDebug|Win32.Build.0 = UDebug|Win32
 		{FB127A54-83D0-4AA1-BF6E-42228160FCB3}.UDebug|x64.ActiveCfg = UDebug|x64
 		{FB127A54-83D0-4AA1-BF6E-42228160FCB3}.UDebug|x64.Build.0 = UDebug|x64
-		{FB127A54-83D0-4AA1-BF6E-42228160FCB3}.URelease|Win32.ActiveCfg = UDebug|Win32
-		{FB127A54-83D0-4AA1-BF6E-42228160FCB3}.URelease|Win32.Build.0 = UDebug|Win32
+		{FB127A54-83D0-4AA1-BF6E-42228160FCB3}.URelease|Win32.ActiveCfg = URelease|Win32
+		{FB127A54-83D0-4AA1-BF6E-42228160FCB3}.URelease|Win32.Build.0 = URelease|Win32
 		{FB127A54-83D0-4AA1-BF6E-42228160FCB3}.URelease|x64.ActiveCfg = URelease|x64
 		{FB127A54-83D0-4AA1-BF6E-42228160FCB3}.URelease|x64.Build.0 = URelease|x64
 	EndGlobalSection
