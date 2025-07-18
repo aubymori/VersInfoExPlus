@@ -1,4 +1,7 @@
 # VersInfoExPlus
+
+![Screenshot](screenshot.png)
+
 This is a fork of [VersInfoEx](https://www.codeproject.com/Articles/118909/Windows-7-File-properties-Version-Tab-Shell-Extens)
 that aims to be as accurate to the Windows XP Version tab as possible.
 
