@@ -1,0 +1,145 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""VersInfoEx.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VERSINFOEX_PROPPAGE DIALOGEX 0, 0, 227, 200
+STYLE DS_MODALFRAME | DS_SHELLFONT | DS_NOIDLEMSG | WS_POPUP | WS_CAPTION
+CAPTION "Version"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "File version:",IDC_STATIC,7,10,44,8
+    EDITTEXT        IDC_FILE_VERSION_EDIT,54,10,150,12,ES_AUTOHSCROLL |
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Description:",IDC_STATIC,7,29,42,8
+    EDITTEXT        IDC_DESCRIPTION_EDIT,54,29,150,12,ES_AUTOHSCROLL |
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Copyright:",IDC_STATIC,7,48,40,8
+    EDITTEXT        IDC_COPYRIGHT_EDIT,54,48,150,12,ES_AUTOHSCROLL |
+                    ES_READONLY | NOT WS_BORDER
+    GROUPBOX        "Other version information",IDC_STATIC,7,70,212,122
+    LTEXT           "Item name:",IDC_STATIC,16,84,51,8
+    LTEXT           "Value:",IDC_STATIC,106,84,92,8
+    LISTBOX         IDC_ITEM_NAME_LISTBOX,16,94,84,89,LBS_SORT |
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL |
+                    WS_TABSTOP
+    EDITTEXT        IDC_VALUE_EDIT,105,94,106,89,ES_MULTILINE |
+                    ES_READONLY | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_VERSINFOEX_PROPPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_VERSINFOEX_PROPPAGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_VN_FILEVERSION      "File Version"
+    IDS_VN_COMMENTS         "Comments"
+    IDS_VN_COMPANYNAME      "Company"
+    IDS_VN_INTERNALNAME     "Internal Name"
+    IDS_VN_LEGALTRADEMARKS  "Legal Trademarks"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_VN_ORIGINALFILENAME "Original File name"
+    IDS_VN_PRIVATEBUILD     "Private Build Description"
+    IDS_VN_PRODUCTNAME      "Product Name"
+    IDS_VN_PRODUCTVERSION   "Product Version"
+    IDS_VN_SPECIALBUILD     "Special Build Description"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "VersInfoEx.rc2"  // non-Microsoft Visual C++ edited resources
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

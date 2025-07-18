@@ -1,0 +1,6 @@
+x64/
+Win32/
+URelease/
+UDebug/
+*.user
+.vs/

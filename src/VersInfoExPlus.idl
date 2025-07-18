@@ -1,0 +1,43 @@
+//////////////////////////////////////////////////////////////////////////////////////////
+// VersInfoEx.idl : IDL source for VersInfoEx.dll
+//////////////////////////////////////////////////////////////////////////////////////////
+
+#include "myuuids.h"                    // (custom pre-build event rule)
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+import "oaidl.idl";
+import "ocidl.idl";
+[
+    object,
+    uuid       ( VERSINFOEX_INTERFACE_UUID ), dual,
+    helpstring ( VERSINFOEX_INTERFACE_DESC ),
+    pointer_default( unique )
+]
+interface  IVersInfoShlExt  : IDispatch
+{
+};
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+[
+    uuid       ( VERSINFOEX_TYPELIB_UUID ),
+    helpstring ( VERSINFOEX_TYPELIB_DESC ),
+    version    ( VERSINFOEX_TYPELIB_VERS )
+]
+library          VersInfoExLib
+{
+    importlib( "stdole32.tlb" );
+    importlib( "stdole2.tlb"  );
+
+    [
+        uuid       ( VERSINFOEX_CLASS_UUID ),
+        helpstring ( VERSINFOEX_CLASS_DESC )
+    ]
+    coclass                   VersInfoShlExt
+    {
+        [default] interface  IVersInfoShlExt;
+    };
+};
+
+//////////////////////////////////////////////////////////////////////////////////////////

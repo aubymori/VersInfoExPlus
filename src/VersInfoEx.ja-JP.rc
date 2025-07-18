@@ -1,0 +1,108 @@
+﻿// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_JAPANESE, SUBLANG_JAPANESE_JAPAN
+#pragma code_page(65001)
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VERSINFOEX_PROPPAGE DIALOGEX 0, 0, 227, 200
+STYLE DS_MODALFRAME | DS_SHELLFONT | DS_NOIDLEMSG | WS_POPUP | WS_CAPTION
+CAPTION "バージョン情報"
+FONT 9, "MS UI Gothic"
+BEGIN
+    LTEXT           "ファイル バージョン:",IDC_STATIC,7,10,54,8
+    EDITTEXT        IDC_FILE_VERSION_EDIT,64,10,150,12,ES_AUTOHSCROLL |
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "説明:",IDC_STATIC,7,29,42,8
+    EDITTEXT        IDC_DESCRIPTION_EDIT,64,29,150,12,ES_AUTOHSCROLL |
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "著作権:",IDC_STATIC,7,48,40,8
+    EDITTEXT        IDC_COPYRIGHT_EDIT,64,48,150,12,ES_AUTOHSCROLL |
+                    ES_READONLY | NOT WS_BORDER
+    GROUPBOX        "詳細",IDC_STATIC,7,70,212,122
+    LTEXT           "項目:",IDC_STATIC,16,84,51,8
+    LTEXT           "値:",IDC_STATIC,106,84,92,8
+    LISTBOX         IDC_ITEM_NAME_LISTBOX,16,94,84,89,LBS_SORT |
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL |
+                    WS_TABSTOP
+    EDITTEXT        IDC_VALUE_EDIT,105,94,106,89,ES_MULTILINE |
+                    ES_READONLY | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_VERSINFOEX_PROPPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_VERSINFOEX_PROPPAGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_VN_FILEVERSION      "ファイル バージョン"
+    IDS_VN_COMMENTS         "コメント"
+    IDS_VN_COMPANYNAME      "会社名"
+    IDS_VN_INTERNALNAME     "内部名"
+    IDS_VN_LEGALTRADEMARKS  "商標"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_VN_ORIGINALFILENAME "正式ファイル名"
+    IDS_VN_PRIVATEBUILD     "プライベート ビルド情報"
+    IDS_VN_PRODUCTNAME      "製品名"
+    IDS_VN_PRODUCTVERSION   "製品バージョン"
+    IDS_VN_SPECIALBUILD     "スペシャル ビルド情報"
+END
+
+#endif    // Japanese (Japan) resources
+/////////////////////////////////////////////////////////////////////////////
+

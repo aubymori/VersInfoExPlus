@@ -1,0 +1,23 @@
+HKCR
+{
+    NoRemove CLSID
+    {
+        ForceRemove {26B48C81-DAA1-4371-9441-2D8EC2A0B0F2} = s 'VersInfoShlExt Class'
+        {
+            InprocServer32 = s '%MODULE%'
+            {
+                val ThreadingModel = s 'Apartment'
+            }
+        }
+    }
+    NoRemove *
+    {
+        NoRemove shellex
+        {
+            NoRemove PropertySheetHandlers
+            {
+                {26B48C81-DAA1-4371-9441-2D8EC2A0B0F2}
+            }
+        }
+    }
+}

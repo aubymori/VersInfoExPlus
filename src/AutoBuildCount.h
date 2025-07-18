@@ -1,0 +1,5 @@
+#ifndef AUTOBUILDCOUNT
+#define AUTOBUILDCOUNT
+#define BUILDCOUNT_NUM  166
+#define BUILDCOUNT_STR "166"
+#endif
